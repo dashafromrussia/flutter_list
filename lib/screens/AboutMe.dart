@@ -33,26 +33,28 @@ class AboutMeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 10,),
+            const SizedBox(height: 5,),
             ElevatedButton(onPressed:(){
               Navigator.pushNamed(context, '/mydata');
             }, child: const Text("My data")),
-            const SizedBox(height: 10,),
+            const SizedBox(height: 5,),
             ElevatedButton(onPressed:(){
               Navigator.pushNamed(context, '/notif');
             }, child: const Text("Notification")),
-            const SizedBox(height: 10,),
+            const SizedBox(height: 5,),
             ElevatedButton(onPressed: (){
               userData.add(const ExitUser());
               Navigator.of(context)
                   .pushNamedAndRemoveUntil('/login', (Route<dynamic> route) => false);
             }, child: const Text("exit")),
-            const SizedBox(height: 10,),
+            const SizedBox(height: 5,),
             ElevatedButton(onPressed:(){
               userData.add(const DeleteUserData());
               Navigator.of(context)
                   .pushNamedAndRemoveUntil('/login', (Route<dynamic> route) => false);
             }, child:const Text("del")),
+            SizeBox(height:20),
+            const Text("Version 1.0.0"),
           ],
         ),),
         drawer: drawer,
