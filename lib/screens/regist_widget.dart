@@ -201,7 +201,7 @@ class ElemList extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 10,),
-      /*  Container(
+     Container(
           width:MediaQuery.of(context).size.width*0.7,
           height: MediaQuery.of(context).size.height*0.5,
           margin: const EdgeInsets.symmetric(vertical: 0.5),
@@ -209,7 +209,7 @@ class ElemList extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
           ),
           child: Image.memory(data['image'] as Uint8List,fit: BoxFit.cover),
-        ),*/
+        ),
         const SizedBox(height: 3,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -251,7 +251,7 @@ class ElemList extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 10,),
-       /* data['image']!=''?  Container(
+        data['image']!=''?  Container(
           width:MediaQuery.of(context).size.width*0.7,
           height: MediaQuery.of(context).size.height*0.5,
           margin: const EdgeInsets.symmetric(vertical: 0.5),
@@ -259,7 +259,7 @@ class ElemList extends StatelessWidget {
             borderRadius: BorderRadius.circular(100),
           ),
           child: Image.memory(data['image'] as Uint8List,fit: BoxFit.cover),
-        ):const SizedBox(),*/
+        ):const SizedBox(),
         const SizedBox(height: 3,),
         data.containsKey('type')? Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -274,18 +274,3 @@ class ElemList extends StatelessWidget {
 }
 
 
-
-/*Column(
-            children: [
-              ElevatedButton(onPressed: (){
-                userData.add(const ExitUser());
-                Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/login', (Route<dynamic> route) => false);
-              }, child: const Text("exit")),
-              ElevatedButton(onPressed:(){
-                 userData.add(const DeleteUserData());
-                 Navigator.of(context)
-                     .pushNamedAndRemoveUntil('/login', (Route<dynamic> route) => false);
-              }, child: Text("del")),
-            ],
-          );*/
